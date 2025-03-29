@@ -65,7 +65,10 @@ background-color: #222;
 .main-content{
     display: flex;
     flex-direction: column;
+    /* padding: 12px 70px; */
+    z-index: 1;
     position: relative;
+
     
 }
 h1{
@@ -75,20 +78,57 @@ h1{
     letter-spacing: -2px;
     padding: 42px 70px;
     text-align: center;
+    color: red;
 }
 h2{
     font-size: 30px;
 }
+h3{
+    font-size: 30px;
+}
+.titulo{
+    font-weight: 900;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+}
 .slogan{
-    color: red;
+    color: white;
 }
 p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
 }
 
-.banner-img{
-    height: 100%;
+/* HERO */
+#hero {
     width: 100%;
-    position:absolute;
+    height: 50vh;
+    background: url(../imagens/banner.jpg) bottom;
+    background-size: cover;
+    position: relative;
+    
+}
+#hero .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 100px;
+}
+#hero h2 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 120px;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#hero p {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 26px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
