@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/330px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png"
+        type="image/x-icon" />
+  </head>
+  <body>
+
+    <main>
+
+  
+    <header id="header">
+        <!-- Menu desktop -->
+        <nav class="header-nav">
+            <div class="menu menu-principal">
+              <a href="index.html" class="menu-link"><span class="menu-texto">Home</span></a>
+              <a href="pontosTuristicos.html" class="menu-link"><span class="menu-texto">Pontos Turísticos</span></a>
+              <a href="culinaria.html" class="menu-link"><span class="menu-texto">Culinária</span></a>
+              <a href="contatos.html" class="menu-link"><span class="menu-texto">Contatos</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-contatos">
+      <h2 class="titulo">Entre em Contato</h2>
+      <form>
+        <label for="nome">Nome:*</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:*</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="telefone">Telefone:*</label>
+        <input type="tel" id="telefone" name="telefone" />
+
+        <label for="idade">Idade:*</label>
+        <input type="number" id="idade" name="idade" />
+
+        <label for="assunto">Assunto:*</label>
+        <select id="assunto" name="assunto">
+          <option value="duvida">Dúvida</option>
+          <option value="sugestão">Sugestão</option>
+          <option value="reclamação">Reclamação</option>
+        </select>
+
+        <label for="mensagem">Mensagem:*</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </form>
+    </div>
+</main>
+
+    <footer>
+        <p>©2025.Desenvolvido para aulas do Professor Clodoaudo. Direitos reservados para Andressa,Camila e Gabriel </p>
+    </footer>
+
+
+  </body>
+</html>
